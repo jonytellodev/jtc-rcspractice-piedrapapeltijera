@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/globals.css" />
+    <title>Desafío Piedra, Papel o Tijera.</title>
+  </head>
+  <!-- Color Palette: https://www.colorhunt.co/palette/d3d6db3a4750303841be3144 -->
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid d-flex justify-content-center">
+        <h1>Piedra, Papel o Tijera</h1>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="board">
+        <h4 id="info"></h4>
+        <div class="d-flex">
+          <button id="rock">
+            <img src="/media/rock.png" alt="icono de roca" />
+          </button>
+          <button id="paper">
+            <img src="/media/paper.png" alt="icono de papel" />
+          </button>
+          <button id="scissor">
+            <img src="/media/scissor.png" alt="icono de tijera" />
+          </button>
+        </div>
+        <div>
+          <h4 class="msgStatus" id="computer">Esperando tu jugada...</h4>
+        </div>  
+      </div>
+      <div class="card d-flex flex-row mt-4" style="width: 30rem">
+
+        <div class="card-body d-flex flex-row justify-content-center align-items-center">
+          <h5 class="card-title me-2">Jugador</h5>
+          <h1 class="card p-3"><span id="humanScore">0</span></h1>
+        </div>
+        <div class="card-body d-flex flex-row justify-content-center align-items-center">
+          <h1 class="card p-3"><span id="cpuScore">0</span></h1>
+          <h5 class="card-title ms-2">Computadora</h5>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
